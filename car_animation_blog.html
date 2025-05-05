@@ -1,0 +1,405 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0QKYRT3F8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-D0QKYRT3F8');
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Blender Car Animation Tutorial | Red Moon Studio</title>
+    <meta name="description" content="Learn how to create a car animation in Blender with a textured road, tunnel, footpath, signs, and lighting. Perfect for beginners and pros alike!" />
+    <meta name="keywords" content="Blender, Blender tutorial, Car animation, Blender car scene, 3D animation, Blender beginner tutorial" />
+    <meta name="author" content="Red Moon Studio" />
+  
+    <!-- Canonical Link -->
+    <link rel="canonical" href="https://redmoon3d.com/car_animation_blog.html" />
+  
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blender Car Animation Tutorial | Red Moon Studio" />
+    <meta property="og:description" content="Step-by-step Blender tutorial to create a car animation scene with roads, tunnels, signs, and lighting." />
+    <meta property="og:image" content="https://redmoon3d.com/images/car_animation.webp" />
+    <meta property="og:url" content="https://redmoon3d.com/car_animation_blog.html" />
+    <meta property="og:type" content="article" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Blender Car Animation Tutorial" />
+    <meta name="twitter:description" content="Learn how to animate a car scene in Blender with realistic roads, lighting, and camera animation." />
+    <meta name="twitter:image" content="https://redmoon3d.com/images/car_animation.webp" />
+  
+    <!-- Favicon -->
+    <link rel="icon" href="icon.png" type="image/x-icon" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=planet" />
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Blender Car Animation Tutorial",
+          "image": "https://yourwebsite.com/images/og-image.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "Red Moon Studio"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "Red Moon Studio",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://yourwebsite.com/logo.png"
+            }
+          },
+          "url": "https://yourwebsite.com/blender-car-animation-tutorial",
+          "datePublished": "2025-05-05",
+          "description": "Step-by-step Blender tutorial to create a car animation with realistic environments, road, lighting, and motion blur."
+        }
+        </script>
+      
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        padding-top: 124px;
+        background-color: #1C1C1C !important;
+      }
+      .navbar-top {
+        height: 70px; /* adjust as needed */
+      }
+
+      .navbar-links {
+        top: 70px; /* push below the top navbar */
+        z-index: 1030;
+      }
+
+      .bg-dark{
+        background-color: #1C1C1C !important;
+      }
+      .bg-dark-2
+      {
+        background-color: #171717 !important;
+      }
+      .bg-dark-3
+      {
+        background-color: #242424 !important;
+      }
+      .gradient-text{
+        display: inline-block; /* Ensures background fits the element */
+        background: linear-gradient(360deg, #ffffff, #696969);
+        background-size: 100% 100%; /* Ensures full coverage */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text; 
+        color: transparent;
+      }
+      .image-shadow {
+        position: relative;
+        height: 300px;
+        border-radius: 0.5rem;
+        overflow: hidden;
+      }
+
+      .image-shadow img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: inherit;
+        display: block;
+      }
+
+      .image-shadow::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5);
+        border-radius: inherit;
+        pointer-events: none;
+      }
+      .btn-red{
+        background-color: #B90000;
+        border-radius: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: white;
+      }
+      .btn-red:hover{
+        background-color: #9c0000;
+        border-radius: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      .btn-red-outline{
+        box-shadow: inset 0px 0px 0px 1px red;
+        border-radius: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: red;
+      }
+      .btn-red-outline:hover{
+        border-radius: 15px;
+        box-shadow: inset 0px 0px 0px 1px #e09500;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #e09500;
+      }
+      .text-red{
+        color: red;
+      }
+      .search-box{
+        background-color: #3E3E3E !important;
+        color: #A2A2A2 !important;
+        padding-top: 12px !important;
+        padding-bottom: 12px !important;
+        border-radius: 15px !important;
+      }
+      .search-box::placeholder {
+        color: #A2A2A2 !important;
+        opacity: 1;
+      }
+      .rounded-img{
+        border-radius: 15px !important;
+      }
+    </style>
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      background-color: #171717;
+      color: white;
+      border-radius: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      
+    }
+    .card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  </style>
+  </head>
+
+  <body>
+    <header>      
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar border-bottom border-secondary fixed-top navbar-top">
+        <div class="container-fluid px-lg-5 px-sm-0 d-flex justify-content-between align-items-center">          
+          <div class="d-flex align-items-center px-lg-5 px-md-5 px-sm-2">         
+            <span class="material-symbols-outlined fs-1 text-red pe-2">
+              planet
+              </span>
+            <span class="text-red fs-3 d-none d-lg-inline fw-bold">REDMOON</span>
+          </div>
+          <div class="search-container position-relative mx-auto w-75">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-12 col-md-12 col-lg-6">
+                  <div class="search-container position-relative">
+                    <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white fs-4 "></i>
+                    <input type="text" class="form-control search-input bg-secondary border-0 text-white ps-5 py-2 search-box shadow-lg" placeholder="Search 3d Models, Tutorial, HDRI’s etx.">
+                  </div>
+                </div>
+              </div>
+            </div>            
+          </div>
+
+          <div class="d-flex align-items-center">
+            <button class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="width: 120px !important;">Log In</button>
+            <i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i>
+          </div>
+        </div>
+      </nav>
+      <!-- Bottom Navbar (Navigation links) -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 shadow fixed-top navbar-links">
+        <div class="container-fluid px-lg-5 px-sm-0 px-md-5">
+          <button class="navbar-toggler border-0" type="button" id="navbarToggler" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-lg-none d-flex gap-2 me-auto px-2" id="collapseLinks">
+            <a class="nav-link text-white p-0" href="index.html">Home</a>
+            <a class="nav-link text-white p-0" href="addons.html">Addons</a>
+            <a class="nav-link text-white p-0" href="materials.html">Materials</a>
+          </div>
+          <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5 px-md-5 px-sm-2">
+              <!-- <li class="nav-item"><a class="nav-link" href="#">New</a></li>                             -->
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="addons.html">Addons</a></li>
+              <li class="nav-item"><a class="nav-link" href="materials.html">Materials</a></li>
+              <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorials</a></li>            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="text-white">
+        <div class="container my-5">
+            <h1 class="display-1 text-white fw-bold">Blender Tutorial: Creating a Stunning Car Animation with a Road Scene</h1>
+            <div class="col-12">
+                <img class="img-fluid py-3 mb-2" src="images/car_animation.webp" alt="Geometry Nodes in Blender">
+              </div>
+            <p class="lead">
+            In this tutorial, you'll learn how to create a beautiful car animation in Blender, complete with a textured road, tunnel, footpath, signs, and lighting. By the end, you’ll have a fully animated scene ready for rendering.
+            </p>
+
+            <h2 class="mt-5">1. Setting Up the Road</h2>
+            <h5>Adding and Texturing the Road</h5>
+            <ul>
+            <li>Press <strong>Shift + A → Mesh → Plane</strong>.</li>
+            <li>Scale it (<strong>S</strong>) to form the base of your road.</li>
+            </ul>
+            <img src="images/road_plane.jpg" alt="Adding the road plane">
+
+            <h5>Unwrap the Road for Texturing</h5>
+            <ul>
+            <li>Go to <strong>Edit Mode</strong> (Tab).</li>
+            <li>Select all (<strong>A</strong>) and press <strong>U → Unwrap</strong>.</li>
+            </ul>
+
+            <h5>Apply a Road Texture</h5>
+            <ul>
+            <li>Download a free road texture from <a href="https://www.textures.com" target="_blank">Textures.com</a>.</li>
+            <li>In the <strong>Shading</strong> tab, add an <strong>Image Texture</strong> node and load your texture.</li>
+            </ul>
+            <img src="images/road_texture.jpg" alt="Applying road texture in Shading Editor">
+
+            <h5>Extend the Road with Array Modifier</h5>
+            <ul>
+            <li>Add an <strong>Array Modifier</strong> to the road.</li>
+            <li>Increase the <strong>Count</strong> to extend the road.</li>
+            </ul>
+
+            <h5>Adjust Lighting</h5>
+            <ul>
+            <li>Add an <strong>Area Light</strong> (Shift + A → Light → Area Light).</li>
+            <li>Increase its <strong>Strength</strong> to illuminate the scene.</li>
+            </ul>
+            <img src="images/lighting_area.jpg" alt="Area Light for Scene">
+
+            <h2 class="mt-5">2. Adding the Car Model</h2>
+            <ul>
+            <li>Import or append a car model (<strong>File → Append/Import</strong>).</li>
+            <li>Scale (<strong>S</strong>) and position it on the road.</li>
+            <li>Save your file (<strong>Ctrl + S</strong>).</li>
+            </ul>
+            <img src="images/car_model.jpg" alt="Car model placed on road">
+
+            <h2 class="mt-5">3. Creating the Footpath & Tunnel</h2>
+            <h5>Separating the Footpath</h5>
+            <ul>
+            <li>Select the road edge, extrude (<strong>E</strong>), press <strong>L</strong> to select loop.</li>
+            <li>Press <strong>P → Selection</strong> to make it a new object.</li>
+            </ul>
+
+            <h5>Extrude the Footpath Upwards</h5>
+            <ul>
+            <li>Select the top face and extrude upward (<strong>E + Z</strong>).</li>
+            <li>Add a <strong>Mirror Modifier</strong> and set Mirror Object to the road.</li>
+            </ul>
+            <img src="images/footpath.jpg" alt="Footpath extruded upward">
+
+            <h5>Refining the Tunnel</h5>
+            <ul>
+            <li>Add <strong>Loop Cuts</strong> (<strong>Ctrl + R</strong>).</li>
+            <li>Duplicate (<strong>Shift + D</strong>) and separate (<strong>P</strong>) to make tunnel walls.</li>
+            <li>Extrude (<strong>E</strong>) and bevel (<strong>Ctrl + B</strong>) edges.</li>
+            </ul>
+            <img src="images/tunnel_walls.jpg" alt="Tunnel structure using extrusion and bevel">
+
+            <h2 class="mt-5">4. Adding Pillars & Barriers</h2>
+            <h5>Creating Pillars</h5>
+            <ul>
+            <li>Add a <strong>Cube</strong> and scale it into a pillar shape.</li>
+            <li>Place it at the tunnel entrance and apply an <strong>Array Modifier</strong>.</li>
+            <li>Assign a concrete material (use <a href="https://ambientcg.com/view?id=Concrete018" target="_blank">AmbientCG</a> for free textures).</li>
+            </ul>
+            <img src="images/pillars_array.jpg" alt="Tunnel pillars duplicated with Array Modifier">
+
+            <h5>Adding Barriers</h5>
+            <ul>
+            <li>Extrude a cube into a barrier shape and bevel the edges.</li>
+            <li>Use <strong>Array</strong> and <strong>Mirror Modifiers</strong> to replicate the design.</li>
+            </ul>
+            <img src="images/barriers.jpg" alt="Barriers placed along tunnel sides">
+
+            <h2 class="mt-5">5. Adding Road Signs & Lighting</h2>
+            <h5>Creating Arrow Signs</h5>
+            <ul>
+            <li>Add a plane, rotate and scale it.</li>
+            <li>Apply an arrow texture (find on <a href="https://www.freepik.com" target="_blank">Freepik</a> or similar).</li>
+            <li>Use <strong>UV Editing</strong> to align the image.</li>
+            <li>Extrude the plane for thickness.</li>
+            <li>Use <strong>Array Modifier</strong> to duplicate.</li>
+            </ul>
+            <img src="images/road_sign.jpg" alt="Arrow road signs on plane mesh">
+
+            <h5>Adding Lights</h5>
+            <ul>
+            <li>Create a small cube, bevel, and inset the faces.</li>
+            <li>Assign an <strong>Emission Shader</strong> to make it glow.</li>
+            <li>Duplicate lights along the tunnel roof or near signs.</li>
+            </ul>
+            <img src="images/tunnel_lights.jpg" alt="Emissive tunnel lights for realism">
+
+            <h2 class="mt-5">6. Animating the Car</h2>
+            <ul>
+            <li>Select the camera, then the car body, and press <strong>Ctrl + P → Object</strong> (to follow the car).</li>
+            <li>At frame 1, place the car at the tunnel entrance → <strong>I</strong> to insert location keyframe.</li>
+            <li>At frame 250, move the car forward → <strong>I</strong> to insert keyframe again.</li>
+            <li>Enable <strong>Motion Blur</strong> in Render Properties.</li>
+            </ul>
+            <img src="images/animating_car.jpg" alt="Animating car and camera movement">
+
+            <h2 class="mt-5">7. Final Adjustments & Rendering</h2>
+            <ul>
+            <li>Check light intensity and object positions.</li>
+            <li>Optimize render settings (use <a href="https://www.youtube.com/results?search_query=blender+render+settings+low+end+pc" target="_blank">this YouTube search</a>).</li>
+            <li>Render animation with <strong>Ctrl + F12</strong>.</li>
+            </ul>
+
+            <h2 class="mt-5">🎬 Conclusion</h2>
+            <p>
+            You’ve now created a professional-looking car animation in Blender! Experiment with different textures, lighting, and camera angles to enhance your scene further.
+            </p>
+
+            <h4 class="mt-4">🚀 Want More?</h4>
+            <ul>
+            <li>Free Assets: Check the description or <a href="https://example.com/free-assets" target="_blank">this page</a>.</li>
+            <li>Exclusive Content: Support on <a href="https://www.patreon.com/" target="_blank">Patreon</a> for advanced tutorials.</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+      <!-- place footer here -->
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
