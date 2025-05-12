@@ -170,7 +170,7 @@
                 <div class="col-12 col-md-12 col-lg-6">
                   <div class="search-container position-relative">
                     <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white fs-4 "></i>
-                    <input type="text" class="form-control search-input bg-secondary border-0 text-white ps-5 py-2 search-box shadow-lg" placeholder="Search 3d Models, Tutorial, HDRI’s etx.">
+                    <input type="text" id="searchInput" class="form-control search-input bg-secondary border-0 text-white ps-5 py-2 search-box shadow-lg" placeholder="Search 3d Models, Tutorial, HDRI’s etx.">
                   </div>
                 </div>
               </div>
@@ -190,14 +190,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="d-lg-none d-flex gap-2 me-auto px-2" id="collapseLinks">
-            <a class="nav-link text-white p-0" href="index.html">Home</a>
+            <a class="nav-link text-white p-0" href="index.php">Home</a>
             <a class="nav-link text-white p-0" href="addons.html">Addons</a>
             <a class="nav-link text-white p-0" href="materials.html">Materials</a>
           </div>
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5 px-md-5 px-sm-2">
               <!-- <li class="nav-item"><a class="nav-link" href="#">New</a></li>                             -->
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="addons.html">Addons</a></li>
               <li class="nav-item"><a class="nav-link" href="materials.html">Materials</a></li>
               <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorials</a></li>            
@@ -213,8 +213,8 @@
     <div class="row g-4 justify-content-center mb-4">
       <!-- Card 1 -->
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card text-center border-0">
-          <img src="https://www.blender.org/wp-content/uploads/2025/02/splash_artwork_2K.webp" class="card-img-top" alt="Image 1" />
+        <div class="card text-center border-0 " data-title="Blender What is Blender" data-id="1">
+          <img src="https://www.blender.org/wp-content/uploads/2025/02/splash_artwork_2K.webp" style="height: auto !important; max-width: 100% !important;" class="card-img-top" alt="What is Blender" />
           <div class="card-body">
             <h5 class="card-title fw-bold">Blender</h5>
             <p class="card-text">What is Blender</p>
@@ -225,20 +225,20 @@
 
       <!-- Card 2 -->
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card text-center border-0">
-          <img src="https://docs.blender.org/manual/en/latest/_images/modeling_geometry-nodes_introduction_properties.png" class="card-img-top" alt="Image 2" />
+        <div class="card text-center border-0" data-title="Geometry Nodes Getting Started with geometry nodes." data-id="2">
+          <img src="images/geometry_nodes.png" style="height: auto !important; max-width: 100% !important;" class="card-img-top" alt="Getting Started with geometry nodes" />
           <div class="card-body">
             <h5 class="card-title">Geometry Nodes</h5>
             <p class="card-text">Getting Started with geometry nodes.</p>
-            <a href="geometry_nodes.html" class="btn btn-primary">Learn More</a>
+            <a href="geometry_nodes.php" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
 
       <!-- Card 3 -->
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card text-center border-0">
-          <img src="https://docs.blender.org/manual/en/latest/_images/modeling_modifiers_introduction_stack-example-3.png" class="card-img-top" alt="Image 3" />
+        <div class="card text-center border-0" data-title="Blender Modifiers Ultimate Guide to blender modifiers." data-id="3">
+          <img src="https://docs.blender.org/manual/en/latest/_images/modeling_modifiers_introduction_stack-example-3.png" style="height: auto !important; max-width: 100% !important;" class="card-img-top" alt="Ultimate Guide to blender modifiers." />
           <div class="card-body">
             <h5 class="card-title">Blender Modifiers</h5>
             <p class="card-text">Ultimate Guide to blender modifiers.</p>
@@ -249,18 +249,18 @@
 
       <!-- Card 4 -->
       <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card text-center border-0">
-          <img src="https://www.blender.org/wp-content/uploads/2019/07/sculpt01.jpg" class="card-img-top" alt="Image 4" />
+        <div class="card text-center border-0" data-title="Sculpting Tools All the sculpting tools blender." data-id="4">
+          <img src="https://www.blender.org/wp-content/uploads/2019/07/sculpt01.jpg" class="card-img-top" style="height: auto !important; max-width: 100% !important;" alt="Image 4" />
           <div class="card-body">
             <h5 class="card-title">Sculpting Tools</h5>
             <p class="card-text">All the sculpting tools blender.</p>
-            <a href="sculpting_tools.html" class="btn btn-primary">View</a>
+            <a href="sculpting_tools.php" class="btn btn-primary">View</a>
           </div>
         </div>
       </div>
 
-      <div class="col-lg-3 col-md-6 col-sm-12">
-        <div class="card text-center border-0">
+      <!-- <div class="col-lg-3 col-md-6 col-sm-12">
+        <div class="card text-center border-0"  data-title="Car Aimation in Blender In this tutorial, you'll learn how to create a beautiful car animation in Blender, complete with a textured road, tunnel, footpath, signs, and lighting." data-id="5">
           <img src="images/car_animation.webp" class="card-img-top" alt="Image 4" />
           <div class="card-body">
             <h5 class="card-title">Car Aimation in Blender</h5>
@@ -268,7 +268,8 @@
             <a href="car_animation_blog.html" class="btn btn-primary">Explore</a>
           </div>
         </div>
-      </div>
+      </div> -->
+
     </div>
     <div class="container-fluid px-lg-5 py-5">
       <!-- Top Row -->
@@ -294,5 +295,57 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+    <script>
+      const urlParams = new URLSearchParams(window.location.search);
+      const query = urlParams.get('q') || '';
+
+      const searchInput = document.getElementById('searchInput');
+      if (searchInput) {
+        searchInput.value = query;
+
+        // When user presses Enter again on this page, re-search
+        searchInput.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter') {
+            e.preventDefault();
+            const newQuery = searchInput.value.trim();
+            if (newQuery !== '') {
+              window.location.href = `tutorial.html?q=${encodeURIComponent(newQuery)}`;
+            }
+          }
+        });
+      }
+
+      // Prepare Fuse.js for fuzzy search
+      const cards = document.querySelectorAll('.card[data-id]');
+      const cardData = Array.from(cards).map(card => {
+        return {
+          id: card.getAttribute('data-id'),
+          title: card.querySelector('.card-title')?.innerText || '',
+          text: card.querySelector('.card-text')?.innerText || ''
+        };
+      });
+
+      const fuse = new Fuse(cardData, {
+        keys: ['title', 'text'],
+        threshold: 0.4
+      });
+
+      function filterCards(results) {
+        const matchedIds = results.map(r => r.item.id);
+        cards.forEach(card => {
+          const id = card.getAttribute('data-id');
+          card.parentElement.style.display = matchedIds.includes(id) ? 'block' : 'none';
+        });
+      }
+
+      if (query) {
+        const results = fuse.search(query);
+        filterCards(results);
+      }
+    </script>
+
+
+
   </body>
 </html>
