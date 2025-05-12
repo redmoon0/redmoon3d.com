@@ -236,7 +236,7 @@
           <div class="container bg-dark-2 p-5 rounded-5">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex  align-items-center">
-                  <img src="images/Geometry_nodes/Attribute_statistic.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Attribute Statistic Node"/>
+                  <img src="images/Geometry_nodes/Attribute_Statistic.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Attribute Statistic Node"/>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                   <h1 class="mb-3 fw-bold">Attribute Statistic Node</h1>
