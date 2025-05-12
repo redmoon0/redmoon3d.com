@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db   = 'user_auth';
-$user = 'root';
-$pass = ''; // Change this if needed
+$db   = 'janerutc_user_auth';
+$user = 'janerutc_redmoon';
+$pass = '183redmoon_S'; // Change this if needed
 $charset = 'utf8mb4';
 
 $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
