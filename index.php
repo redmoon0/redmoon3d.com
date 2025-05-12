@@ -68,7 +68,7 @@
               <?php elseif(!isset($_SESSION['user_id'])): ?>                
                 <a class="btn btn-red-outline py-2 d-none d-lg-block me-2" style="width: 130px !important;" href="Log_in_system/sign_up_data.php">Sign Up</a>
                 <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="width: 120px !important;" href="Log_in_system/log_in_data.php">Log In</a>
-                <a href="Log_in_system/register.php" ><i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i></a>
+                <a href="Log_in_system/sign_up_data.php" ><i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i></a>
               <?php endif; ?>
             </div>
           </div>

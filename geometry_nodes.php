@@ -45,6 +45,7 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -232,6 +233,105 @@
             </div>
           </div>
           <hr class="w-50 mx-auto"/>
+          <div class="container bg-dark-2 p-5 rounded-5">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex  align-items-center">
+                  <img src="images/Geometry_nodes/Attribute_statistic.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Attribute Statistic Node"/>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                  <h1 class="mb-3 fw-bold">Attribute Statistic Node</h1>
+                  <p>The Attribute Statistic node in Blender's Geometry Nodes calculates statistical data from a specified attribute across a selected geometry domain (points, edges, faces, etc.). It provides important metrics like the minimum, maximum, mean, median, range, standard deviation, and variance of the values in the attribute you select.</p>
+
+                  <h3 class="fw-bold">Where is it Used?</h3>
+                  <p>This node is useful in situations where you need to make decisions or drive effects based on the statistical properties of an attribute across geometry.</p>
+
+                  <h3 class="fw-bold">Example Use</h3>
+                  <p><strong>Texture Mapping</strong>: You might calculate the mean of the UV coordinates to adjust the tiling or scale of textures applied to the geometry based on its characteristics.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/Domain_Size.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Domain Size Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Domain Size Node</h1>
+                <p>The Domain Size node in Blender's Geometry Nodes calculates the number of elements (such as points, edges, or faces) in a specified geometry domain. It returns an integer value corresponding to the size of the selected geometry domain.</p>
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is used when you need to know the number of elements in a geometry domain, which can be useful for creating effects that depend on geometry size, such as for procedural modeling or animation setups.</p>
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Geometry Density Adjustment</strong>: You might use this node to adjust parameters based on the density of points, such as scaling objects in a scene based on the number of vertices in the geometry.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/Blur_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Blur Attribute Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Blur Attribute Node</h1>
+                <p>The Blur Attribute node in Blender's Geometry Nodes smooths or blurs an attribute across the geometry, taking into account the values of neighboring elements. This is often used to create soft transitions or smooth variations in an attribute.</p>
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is useful in situations where you want to smooth out attribute values, such as when creating a more gradual transition between colors, scales, or other attributes across the geometry.</p>
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Soft Transitions</strong>: You might use this node to create smooth variations in the displacement of a surface, such as making the transition between two terrain heights smoother in a procedural landscape.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/Capture_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Capture Attribute Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Capture Attribute Node</h1>
+                <p>The Capture Attribute node in Blender's Geometry Nodes is used to transfer attribute values from one geometry domain to another. It allows you to capture attributes from points, edges, or faces and store them for further manipulation.</p>
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is used when you need to copy attributes from one domain and apply them to another, such as capturing vertex colors or displacement information from one mesh to another.</p>
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>UV Mapping Transfer</strong>: You could use this node to capture UV coordinates from one mesh and apply them to a new mesh, maintaining the texture mapping alignment between both objects.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/Remove_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Remove Named Attribute Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Remove Named Attribute Node</h1>
+                <p>The Remove Named Attribute node in Blender's Geometry Nodes is used to delete a specified attribute from the geometry. This is useful for cleaning up data and removing unnecessary attributes from your nodes network.</p>
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is used when you want to remove an attribute that is no longer necessary, helping to keep the geometry data clean and optimize performance.</p>
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Optimizing Geometry</strong>: You could use this node to remove a temporary attribute that was used for procedural generation, such as a temporary normal or color value after you've finished manipulating the geometry.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 ">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/Store_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="Store Named Attribute Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Store Named Attribute Node</h1>
+                <p>The Store Named Attribute node in Blender's Geometry Nodes is used to save an attribute with a specified name to the geometry. This allows you to create custom attributes that can be used in later parts of your node tree.</p>
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is useful for creating and storing custom data that you want to pass along the node network, such as for specific procedural modeling effects or storing values for later use in other nodes.</p>
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Creating Custom Attributes</strong>: You might use this node to store a custom attribute like a specific displacement value or a color gradient, which you can later manipulate in your geometry node network.</p>
+              </div>
+            </div>
+          </div>
+
+          <hr class="w-50 mx-auto"/>
           <div class="container p-5">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
@@ -250,12 +350,6 @@
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
   </body>
