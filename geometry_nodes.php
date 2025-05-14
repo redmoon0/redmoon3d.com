@@ -315,10 +315,10 @@
             </div>
           </div>
 
-          <div class="container bg-dark-2 p-5 rounded-5 ">
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Store_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="Store Named Attribute Node"/>
+                <img src="images/Geometry_nodes/Store_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Store Named Attribute Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Store Named Attribute Node</h1>
@@ -327,6 +327,142 @@
                 <p>This node is useful for creating and storing custom data that you want to pass along the node network, such as for specific procedural modeling effects or storing values for later use in other nodes.</p>
                 <h3 class="fw-bold">Example Use</h3>
                 <p><strong>Creating Custom Attributes</strong>: You might use this node to store a custom attribute like a specific displacement value or a color gradient, which you can later manipulate in your geometry node network.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Boolean.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Boolean Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Boolean Node</h1>
+                <p>The Boolean node provides a constant true or false value in the geometry node tree. It is often used as a toggle to enable or disable operations or effects.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used for controlling conditions such as switches, muting certain parts of node trees, or branching logic based on true/false conditions.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Visibility Toggle</strong>: Control whether parts of geometry are included in the final output with a Boolean switch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Color.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Color Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Color Node</h1>
+                <p>The Color node provides a constant RGBA color value. It’s often used to assign base colors or as inputs to shaders or color-mapping nodes.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Useful when assigning flat colors to objects or driving color-based effects like gradients or masks.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Vertex Coloring</strong>: Apply a flat color to an entire mesh or drive color blending in shading.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Image.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Image Node</h1>
+                <p>The Image node allows you to reference an image file within the node system. This image can then be sampled or used in various texture-based operations.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Often used in texture lookups, masking, and advanced procedural texturing techniques within Geometry Nodes or Shader workflows.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Texture Coordinates</strong>: Sample a specific texture to affect displacement or coloring of geometry.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Integer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Integer Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Integer Node</h1>
+                <p>The Integer node provides a fixed whole number input. It is often used for indexing, counts, or any case where an integer value is required.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Commonly used in loops, array manipulation, ID setting, and modular operations.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Grid Distribution</strong>: Use an integer to control the number of points or rows when distributing geometry.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Material.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Material Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Material Node</h1>
+                <p>The Material node provides a reference to an existing material in the Blender file. It can be assigned or used in comparisons and filters.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used to apply materials to geometry procedurally or as filters to perform operations based on material properties.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Material Assignment</strong>: Assign different materials to parts of geometry based on conditions.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Rotation.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Rotation Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Rotation Node</h1>
+                <p>The Rotation node provides a constant rotation value in Euler angles. This is useful for setting or controlling rotations of geometry.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used in transforming geometry, aligning instances, or driving rotation-based behavior.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Instancing</strong>: Apply consistent rotation to every instance generated on a mesh.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/String.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is String Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">String Node</h1>
+                <p>The String node provides a constant text value. It's useful for labeling, tagging, or naming elements within procedural systems.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used in naming geometry, labeling instances, or driving logic in string-based operations like filtering or formatting.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Instance Labels</strong>: Use the string value to dynamically name or sort instances for output or debugging.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes/Vector.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Vector Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Vector Node</h1>
+                <p>The Vector node gives a constant XYZ vector. It is used to define directions, positions, or any vector-based property in geometry nodes.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Commonly used in translation, scaling, directional effects, and vector math operations.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Directional Offset</strong>: Apply a directional shift to geometry by feeding the vector into a translate or offset node.</p>
               </div>
             </div>
           </div>
