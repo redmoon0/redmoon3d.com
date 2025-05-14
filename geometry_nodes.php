@@ -466,6 +466,23 @@
               </div>
             </div>
           </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/black_nodes/Group_Input.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Group Input Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Group Input Node</h1>
+                <p>The <strong>Group Input</strong> node in Blender's Geometry Nodes serves as the starting point for custom node groups. It exposes inputs defined at the group level so you can connect them within the node tree.</p>
+                
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is essential when creating reusable node groups. It passes values from outside the group (like sliders or geometry inputs) into the group’s internal node network.</p>
+                
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Reusable Setup</strong>: If you create a procedural object like a tree or fence, you can define parameters such as height, width, or count using the Group Input node, making the setup easily controllable and modular.</p>
+              </div>
+            </div>
+          </div>
 
           <hr class="w-50 mx-auto"/>
           <div class="container p-5">
