@@ -13,30 +13,30 @@
     
       gtag('config', 'G-D0QKYRT3F8');
     </script>
-     <title>Geometry Nodes in Blender | Beginner's Guide to Procedural Modeling - REDMOON</title>
-     <link rel="icon" href="icon.png" type="image/x-icon">
+     <title>Car modeling in blender</title>
+     <link rel="icon" href="icon.png" type="../../image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Learn how to use Geometry Nodes in Blender with this beginner-friendly guide. Build procedural models, create patterns, add colors, and unlock Blender's full procedural power.">
+    <meta name="description" content="Tesla Model X Blueprints, Learn how to 3d model a car in a free software called blender.">
     <meta name="author" content="REDMOON">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://redmoon3d.com/geometry_nodes.php" />
+    <link rel="canonical" href="https://redmoon3d.com/blogs/3d_modeling_car.php" />
 
     <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Geometry Nodes in Blender - Beginner's Procedural Modeling Guide">
-    <meta property="og:description" content="Master Blender's Geometry Nodes from scratch. Build procedural assets and environments using visual node workflows.">
-    <meta property="og:image" content="https://docs.blender.org/manual/en/latest/_images/modeling_geometry-nodes_introduction_properties.png">
-    <meta property="og:url" content="https://redmoon3d.com/geometry_nodes.php">
+    <meta property="og:title" content="3d Modeling Car in Blender - Beginner's Modeling Guide">
+    <meta property="og:description" content="Master 3d Modeling a car in blender from scratch.">
+    <meta property="og:image" content="https://redmoon3d.com/blogs/images/tesla_blueprint.webp">
+    <meta property="og:url" content="https://redmoon3d.com/blogs/3d_modeling_car.php">
     <meta property="og:type" content="article">
 
     <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Geometry Nodes in Blender - Beginner's Procedural Modeling Guide">
-    <meta name="twitter:description" content="Learn the power of Blender's Geometry Nodes in this hands-on beginner guide. Create procedural assets and environments with ease.">
-    <meta name="twitter:image" content="https://docs.blender.org/manual/en/latest/_images/modeling_geometry-nodes_introduction_properties.png">
+    <meta name="twitter:title" content="Master 3d Modeling a car in blender from scratch.">
+    <meta name="twitter:description" content="Learn how to 3d model a car in a free software called blender. It is free.">
+    <meta name="twitter:image" content="https://redmoon3d.com/blogs/3d_modeling_car.php">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
