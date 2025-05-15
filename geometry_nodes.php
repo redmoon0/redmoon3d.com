@@ -67,6 +67,14 @@
       border-top-right-radius: 15px;
     }
   </style>
+  <style>
+    #nodeSearchInput:focus {
+      box-shadow: 0 0 0 4px rgba(0, 123, 255, 0.2);
+      background-color: #ffffff;
+      transition: all 0.3s ease;
+    }
+  </style>
+
   </head>
 
   <body class="bg-dark">
@@ -233,6 +241,12 @@
             </div>
           </div>
           <hr class="w-50 mx-auto"/>
+          <!-- <div class="container my-4 d-flex justify-content-center">
+            <div class="position-relative" style="width: 50%;">
+              <input type="text" id="nodeSearchInput" class="form-control ps-5 py-3 rounded-pill shadow-sm border-0 w-100" placeholder="Search nodes..." style="background-color: #f1f3f5; color: black;">
+              <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ps-3 text-secondary"></i>
+            </div>
+          </div> -->
           <div class="container bg-dark-2 p-5 rounded-5">
             <div class="row">
                 <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex  align-items-center">
@@ -250,7 +264,6 @@
                 </div>
               </div>
             </div>
-          </div>
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
@@ -483,7 +496,125 @@
               </div>
             </div>
           </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Object_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Object Info Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Object Info Node</h1>
+                <p>The <strong>Object Info</strong> node in Blender's Geometry Nodes provides data from another object in the scene, enabling dynamic interactions between objects within your node setup.</p>
+                
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is useful when you want one object’s transformation or geometry to influence another. It can pull in location, rotation, scale, and geometry from a referenced object.</p>
+                
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Interactive Effects</strong>: Use the Object Info node to make grass bend where a character walks or to control one object's behavior based on another's position or scale.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Scence_Time.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Scene Time Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Scene Time Node</h1>
+                <p>The <strong>Scene Time</strong> node provides information about the current time in the animation. It outputs the current frame and time in seconds, which can be used to drive procedural animations.</p>
 
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is useful when animating geometry or effects procedurally based on the timeline, without using keyframes.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Looping Animations</strong>: Create oscillating or growing effects over time by connecting the Scene Time output to parameters like scale or offset in your node tree.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Self_Object.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Self Object Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Self Object Node</h1>
+                <p>The <strong>Self Object</strong> node outputs a reference to the object that the Geometry Nodes modifier is applied to. It helps access the object’s own data inside the node tree.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This is especially useful when you need the object’s own transform or attributes, such as using its position to affect instances or geometry within itself.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Self-Referencing Effects</strong>: Use the Self Object node to make instances follow or orbit around the object they are part of, allowing self-contained dynamic behaviors.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Active_Camera.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Active Camera Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Active Camera Node</h1>
+                <p>The <strong>Active Camera</strong> node provides a reference to the current active camera in the scene. It allows you to retrieve data such as the camera's position, rotation, or direction.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>This node is often used for effects that react to the camera, such as billboarding, depth-based effects, or aligning geometry relative to the viewer.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Camera-Aware Geometry</strong>: You can use the Active Camera node to rotate geometry to always face the camera, or to scale elements based on their screen distance.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Collection_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Collection Info Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Collection Info Node</h1>
+                <p>The <strong>Collection Info</strong> node brings all objects from a specified collection into your node tree as geometry, allowing you to instance or manipulate them together.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>It’s commonly used when you want to scatter or reference multiple objects (like rocks, trees, or assets) from a collection instead of individual objects.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Scattering Systems</strong>: Pull in a collection of rocks and scatter them on a landscape using the Collection Info node to randomize and instance them procedurally.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Image_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Info Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Image Info Node</h1>
+                <p>The <strong>Image Info</strong> node provides metadata about an image, such as its resolution (width and height) and color space. It is often used when mapping textures or controlling UVs.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Useful in texture-based geometry workflows, where knowing image dimensions or properties can help scale or align procedural elements accurately.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Texture Alignment</strong>: Retrieve image size to dynamically fit or tile geometry based on the actual resolution of a texture.</p>
+              </div>
+            </div>
+          </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/pink_nodes_2/Is_Viewport.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Is Viewport Node"/>
+              </div>
+              <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
+                <h1 class="mb-3 fw-bold">Is Viewport Node</h1>
+                <p>The <strong>Is Viewport</strong> node outputs a boolean that tells whether the current evaluation is happening in the viewport or final render. This allows for performance optimization.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Use it when you want to show simplified geometry in the viewport for performance while keeping full detail in the final render.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Viewport Optimization</strong>: Display low-poly proxies or disable certain effects in the viewport while retaining the full version for renders using this node.</p>
+              </div>
+            </div>
+          </div>
           <hr class="w-50 mx-auto"/>
           <div class="container p-5">
             <div class="row">
@@ -505,6 +636,8 @@
       integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
       crossorigin="anonymous"
     ></script>
+
+
   </body>
 </html>
 

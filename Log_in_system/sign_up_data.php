@@ -97,8 +97,15 @@
             <div class="card shadow-lg rounded-4">
                 <div class="card-body p-4">
                 <h2 class="text-center mb-4">Sign Up</h2>
-
-                    <form action="register.php" method="POST">
+                <?php
+                  if(isset($_GET['redirect'])){
+                    $address=$_GET['redirect'];
+                    echo "<form action='register.php?redirect=$address' method='POST'>";
+                  }
+                  if(!isset($_GET['redirect'])){
+                    echo "<form action='register.php' method='POST'>";
+                  }
+                ?>
                         <div class="mb-3">
                             <label for="username" class="form-label">Username</label>
                             <input type="text" class="form-control" id="username" name="username" required>

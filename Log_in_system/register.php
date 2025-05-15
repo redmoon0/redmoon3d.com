@@ -1,34 +1,58 @@
 <?php
-require 'db.php';
+session_start();
+require 'mailer.php';
+
+if (isset($_GET['redirect'])) {
+    $_SESSION['post_signup_redirect'] = $_GET['redirect'];
+    $address = $_GET['redirect'];
+}
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = trim($_POST['username']);
-    $email    = trim($_POST['email']);
+    $email = trim($_POST['email']);
     $password = $_POST['password'];
     $confirm_password = $_POST['confirm_password'];
 
+    // Validation
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         die("Invalid email format.");
     }
-    if ($password != $confirm_password) {
-        die("Passwords donot match");
+
+    if ($password !== $confirm_password) {
+        die("Passwords do not match.");
     }
+
     if (strlen($password) < 6) {
         die("Password must be at least 6 characters.");
     }
 
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-
-    $stmt = $pdo->prepare("INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)");
-    try {
-        $stmt->execute([$username, $email, $hash]);
-        echo "Registration successful. <a href='log_in_data.php'>Login</a>";
-    } catch (PDOException $e) {
-        if ($e->errorInfo[1] == 1062) {
-            echo "Username or email already exists.";
-        } else {
-            echo "Registration failed.";
-        }
+    // Check if username or email already exists
+    require 'db.php';
+    $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
+    $stmt->execute([$username, $email]);
+    if ($stmt->fetch()) {
+        die("Username or email already exists.");
     }
+
+    // Hash the password and generate OTP
+    $hashed_password = password_hash($password, PASSWORD_DEFAULT);
+    $otp = rand(100000, 999999);
+    $otp_expires = time() + (10 * 60); // 10 minutes from now
+
+    // Save in session temporarily
+    $_SESSION['pending_user'] = [
+        'username' => $username,
+        'email' => $email,
+        'password_hash' => $hashed_password,
+        'otp' => $otp,
+        'otp_expires' => $otp_expires
+    ];
+
+    // Send OTP
+    sendOTPEmail($email, $otp);
+
+    // Redirect to verification page
+    header("Location: verify.php?$address");
+    exit;
 }
 ?>
