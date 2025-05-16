@@ -75,15 +75,15 @@
             </button>
             <div class="d-lg-none d-flex gap-2 me-auto px-2" id="collapseLinks">
               <a class="nav-link text-white p-0" href="../index.php">Home</a>
-              <a class="nav-link text-white p-0" href="../addons.html">Addons</a>
-              <a class="nav-link text-white p-0" href="../materials.html">Materials</a>
+              <a class="nav-link text-white p-0" href="../addons.php">Addons</a>
+              <a class="nav-link text-white p-0" href="../materials.php">Materials</a>
             </div>
             <div class="collapse navbar-collapse" id="mainNavbar">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5 px-md-5 px-sm-2">
                 <!-- <li class="nav-item"><a class="nav-link" href="#">New</a></li>                             -->
                 <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../addons.html">Addons</a></li>
-                <li class="nav-item"><a class="nav-link" href="../materials.html">Materials</a></li>
+                <li class="nav-item"><a class="nav-link" href="../addons.php">Addons</a></li>
+                <li class="nav-item"><a class="nav-link" href="../materials.php">Materials</a></li>
                 <li class="nav-item"><a class="nav-link" href="../tutorial.html">Tutorials</a></li>            
               </ul>
             </div>
@@ -97,6 +97,12 @@
             <div class="card shadow-lg rounded-4">
                 <div class="card-body p-4">
                 <h2 class="text-center mb-4">Sign Up</h2>
+                <?php if (isset($_GET['error'])): ?>
+                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                        <?= htmlspecialchars($_GET['error']) ?>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                <?php endif; ?>
                 <?php
                   if(isset($_GET['redirect'])){
                     $address=$_GET['redirect'];

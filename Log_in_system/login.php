@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         header("Location: dashboard.php");
         exit;
     } else {
-        echo "Invalid credentials.";
+        header("Location: log_in_data.php?error=Invalid email or password");
+        exit;
     }
 }
 ?>

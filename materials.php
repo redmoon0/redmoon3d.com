@@ -1,10 +1,7 @@
-<?php
-  session_start();
-?>
 <!doctype html>
 <html lang="en">
   <head>
-      <!-- Google tag (gtag.js) -->
+  <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-D0QKYRT3F8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -13,7 +10,7 @@
     
       gtag('config', 'G-D0QKYRT3F8');
     </script>
-    <title>REDMOON</title>
+    <title>Materials</title>
     <link rel="icon" href="icon.png" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -21,6 +18,23 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Shop high-quality Blender materials and shaders for ultra-realistic renders. Get smart, flexible node setups with no UV mapping needed.">
+    <meta name="keywords" content="Blender materials, 3D shaders, PBR textures, car paint shader, principled materials, Redmoon Studio">
+    <meta name="author" content="Redmoon Studio">
+
+    <!-- Open Graph Meta Tags (for social sharing) -->
+    <meta property="og:title" content="Blender Materials | Redmoon Studio">
+    <meta property="og:description" content="High-quality Blender materials and procedural shaders for realistic renders.">
+    <meta property="og:image" content="https://www.redmoon3d.com/images/preview-material.jpg">
+    <meta property="og:url" content="https://www.redmoon3d.com/materials.php">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Blender Materials | Redmoon Studio">
+    <meta name="twitter:description" content="High-quality Blender materials and procedural shaders for realistic renders.">
+    <meta name="twitter:image" content="https://www.redmoon3d.com/images/preview-material.jpg">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -34,9 +48,29 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=planet" />
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      background-color: #171717;
+      color: white;
+      border-radius: 15px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+      
+    }
+    .card-img-top {
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+  </style>
   </head>
 
-  <body>
+  <body class="bg-dark">
     <header>      
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark main-navbar border-bottom border-secondary fixed-top navbar-top">
           <div class="container-fluid px-lg-5 px-sm-0 d-flex justify-content-between align-items-center">          
@@ -51,16 +85,14 @@
                 <div class="row justify-content-center">
                   <div class="col-12 col-md-12 col-lg-6">
                     <div class="search-container position-relative">
-                      <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white fs-4 "></i>
-                      <input type="text" id="searchInput" class="form-control search-input bg-secondary border-0 text-white ps-5 py-2 search-box shadow-lg" placeholder="Search 3d Models, Tutorial, HDRI’s etx.">
-                    </div>                                       
+                      <!-- <i class="bi bi-search position-absolute top-50 start-0 translate-middle-y ms-3 text-white fs-4 "></i> -->
+                      <!-- <input type="text" id="searchInput" class="form-control search-input bg-secondary border-0 text-white ps-5 py-2 search-box shadow-lg" placeholder="Search 3d Models, Tutorial, HDRI’s etx."> -->
+                    </div>
                   </div>
                 </div>
               </div>            
             </div>
-
-
-
+  
             <div class="d-flex align-items-center">
               <?php if(isset($_SESSION['user_id'])):?>
                 <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="max-width: 150px !important;" href="Log_in_system/dashboard.php">Dashboard</a>
@@ -97,92 +129,53 @@
         </nav>
       </header>
     <main>
-    <div class="container-fluid py-3 px-lg-5 bg-dark-2 text-white">
-      <div class="row align-items-center px-lg-2">
-        <div class="col-lg-4 col-md-12 col-sm-12 text-center text-md-start py-5 mx-auto">
-          <h1 class="display-1 fw-bold gradient-text">Everything 3D You Need</h1>
-          <p class="lead">Shape Your World with Blender Tools, Textures & Tips — Everything You Need to Create, Learn, and Elevate Your 3D Art.</p>
-          <a href="tutorial.html" class="btn btn-red btn-lg">Start Now!</a>
-          <a href="Log_in_system/log_in_data.php" class="btn btn-red-outline btn-lg">Log In</a>
+  <!-- Card Grid Section -->
+  <div class="container-fluid px-lg-5 py-5">
+    <!-- Top Row -->
+    <div class="row g-4 justify-content-center mb-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card border-0">
+          <div id="carPaintCarousel" class="carousel slide" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/car_paint_1.webp" class="d-block w-100" alt="Procedural Car Paint">
+              </div>
+              <div class="carousel-item">
+                <img src="images/car_paint_2.webp" class="d-block w-100" alt="Procedural Car Paint">
+              </div>
+              <div class="carousel-item">
+                <img src="images/car_paint_3.webp" class="d-block w-100" alt="Procedural Car Paint">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carPaintCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carPaintCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title fw-bold">$5</h5>
+            <p class="card-text mb-1">Principled Car Paint</p>
+            <p class="card-text text-secondary">
+              Principled Car Material is the ultimate all-in-one shader for hyper-realistic car renders in Blender.
+              Add flakes, rust, dirt, and more with smart edge detection and no UVs—just intuitive sliders.
+              Perfect for beginners and pros, it delivers stunning results in seconds.
+            </p>
+            <a href="https://redmoonvfx.gumroad.com/l/Principled-Car-Material" class="btn btn-primary">Get It</a>
+          </div>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12 text-center mx-auto">
-          <img src="images/vision_1.webp" class="img-fluid rounded-img shadow" alt="3D Art Example">
+      </div>      
+    </div>
+    <div class="container-fluid px-lg-5 py-5">
+      <!-- Top Row -->
+      <div class="row g-4 justify-content-center mb-4">
+        <div class="col-12">
+          <h1 class="display-1 fw-bold text-center text-light">More On The Way!</h1>
         </div>
       </div>
     </div>
-    
-    <div class="container-fluid p-lg-5 py-5 bg-dark-3">
-      <div class="container-fluid p-lg-5">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-12 col-sm-12 text-center text-white">
-              <h1 class="mb-3 fw-bold display-3 gradient-text">Addons</h1>
-              <p class="text-secondary mb-4 fs-5">Explore our latest addon on buildings</p>
-              <div class="image-shadow">
-                <img src="images/building.webp" class="img-fluid w-100" alt="Explore our latest addon on buildings" loading="lazy">
-              </div>              
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 text-center text-white">
-              <h1 class="mb-3 fw-bold display-3 gradient-text">Materials</h1>
-              <p class="text-secondary mb-4 fs-5">Best quality fully procedural materials</p>
-              <div class="image-shadow">
-                <img src="images/diamond.webp" class="img-fluid w-100" alt="Best quality fully procedural materials" loading="lazy">
-              </div>              
-          </div>
-          <div class="col-lg-4 col-md-12 col-sm-12 text-center text-white">
-              <h1 class="mb-3 fw-bold display-3 gradient-text">Tutorials</h1>
-              <p class="text-secondary mb-4 fs-5">Easy to follow tutorials with file</p>
-              <div class="image-shadow">
-                <img src="images/tutorial.webp" class="img-fluid w-100" alt="Easy to follow tutorials with file" loading="lazy">
-              </div>              
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid p-lg-5 py-5 bg-dark-2">
-      <div class="row ps-lg-5">
-        <div class="col-lg-12 col-md-12 col-sm-12 text-white">
-          <h1 class="fw-bold display-3 gradient-text">Get Inspired. <span class="p-0 m-0 fs-5 text-secondary"> Other have already done it.</span></h1>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid px-lg-5 py-5 pt-0 bg-dark-2">
-      <div class="row p-lg-5 pt-lg-0">
-        <div class="container-fluid mb-4">
-          <div class="row g-4">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div style="height: 500px; overflow: hidden; border-radius: 15px;">
-                <img src="images/vision_1.webp" class="img-fluid rounded-img w-100" style="height: 100%; object-fit: cover;" alt="3d Model Of Vision Pro" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div style="height: 500px; overflow: hidden; border-radius: 15px;">
-                <img src="images/vision_2.webp" class="img-fluid rounded-img w-100" style="height: 100%; object-fit: cover;" alt="3d Model Of Vision Pro" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div style="height: 500px; overflow: hidden; border-radius: 15px;">
-                <img src="images/vision_3.webp" class="img-fluid rounded-img w-100" style="height: 100%; object-fit: cover;" alt="3d Model Of Vision Pro" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div style="height: 500px; overflow: hidden; border-radius: 15px;">
-                <img src="images/watch_2.webp" class="img-fluid rounded-img w-100" style="height: 100%; object-fit: cover;" alt="3d Model Of Rolex" loading="lazy"/>
-              </div>
-            </div>
-            <div class="col-lg-8 col-md-12 col-sm-12">
-              <div style="height: 500px; overflow: hidden; border-radius: 15px;">
-                <img src="images/watch_1.webp" class="img-fluid w-100" style="height: 100%; object-fit: cover;" alt="3d Model Of Rolex" loading="lazy">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Section 1: Three equal images -->
-
-
     </main>
     <footer>
       <!-- place footer here -->
@@ -199,23 +192,5 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const searchInput = document.getElementById('searchInput');
-      if (searchInput) {
-        searchInput.addEventListener('keydown', function(e) {
-          if (e.key === 'Enter') {
-            e.preventDefault();
-            const query = searchInput.value.trim();
-            if (query !== '') {
-              window.location.href = `tutorial.html?q=${encodeURIComponent(query)}`;
-            }
-          }
-        });
-      }
-    </script>
-
   </body>
 </html>
-
-
-

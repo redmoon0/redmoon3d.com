@@ -73,15 +73,15 @@
             </button>
             <div class="d-lg-none d-flex gap-2 me-auto px-2" id="collapseLinks">
               <a class="nav-link text-white p-0" href="../index.php">Home</a>
-              <a class="nav-link text-white p-0" href="../addons.html">Addons</a>
-              <a class="nav-link text-white p-0" href="../materials.html">Materials</a>
+              <a class="nav-link text-white p-0" href="../addons.php">Addons</a>
+              <a class="nav-link text-white p-0" href="../materials.php">Materials</a>
             </div>
             <div class="collapse navbar-collapse" id="mainNavbar">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5 px-md-5 px-sm-2">
                 <!-- <li class="nav-item"><a class="nav-link" href="#">New</a></li>                             -->
                 <li class="nav-item"><a class="nav-link" href="../index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="../addons.html">Addons</a></li>
-                <li class="nav-item"><a class="nav-link" href="../materials.html">Materials</a></li>
+                <li class="nav-item"><a class="nav-link" href="../addons.php">Addons</a></li>
+                <li class="nav-item"><a class="nav-link" href="../materials.php">Materials</a></li>
                 <li class="nav-item"><a class="nav-link" href="../tutorial.html">Tutorials</a></li>            
               </ul>
             </div>
@@ -91,25 +91,32 @@
     <main>
         <div class="container mt-5">
             <div class="row justify-content-center">
-            <div class="col-md-5">
-                <div class="card shadow-lg rounded-4">
-                <div class="card-body p-4">
-                    <h2 class="text-center mb-4">Login</h2>
-                    <form action="login.php" method="POST">
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" name="email" required />
-                        </div>
-                        <div class="mb-3">
-                            <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" name="password" required />
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100">Log In</button>
-                    </form>
-                    <p class="mt-3 text-center">Don't have an account? <a href="sign_up_data.php">Sign up</a></p>
-                </div>
-                </div>
-            </div>
+              <div class="col-md-5">
+                  <div class="card shadow-lg rounded-4">
+                    <div class="card-body p-4">
+                        <h2 class="text-center mb-4">Login</h2>                                            
+                        <?php if (isset($_GET['error'])): ?>
+                            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                <?= htmlspecialchars($_GET['error']) ?>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        <?php endif; ?>
+
+                        <form action="login.php" method="POST">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="email" required />
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" class="form-control" id="password" name="password" required />
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Log In</button>
+                        </form>
+                        <p class="mt-3 text-center">Don't have an account? <a href="sign_up_data.php">Sign up</a></p>
+                    </div>
+                  </div>
+              </div>
             </div>
         </div>
     </main>

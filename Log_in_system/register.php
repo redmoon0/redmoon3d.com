@@ -15,15 +15,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     // Validation
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        die("Invalid email format.");
+        header("Location: sign_up_data.php?error=Invalid email format.&redirect=$address");        
+        exit();
     }
 
     if ($password !== $confirm_password) {
-        die("Passwords do not match.");
+        header("Location: sign_up_data.php?error=Password does not match.&redirect=$address");      
+        exit();
     }
 
     if (strlen($password) < 6) {
-        die("Password must be at least 6 characters.");
+        header("Location: sign_up_data.php?error=Password must be at least 6 characters.&redirect=$address");    
+        exit();
     }
 
     // Check if username or email already exists
@@ -31,7 +34,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $stmt = $pdo->prepare("SELECT id FROM users WHERE username = ? OR email = ?");
     $stmt->execute([$username, $email]);
     if ($stmt->fetch()) {
-        die("Username or email already exists.");
+        header("Location: sign_up_data.php?error=Username or email already exists.");
+        exit();
     }
 
     // Hash the password and generate OTP
@@ -52,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     sendOTPEmail($email, $otp);
 
     // Redirect to verification page
-    header("Location: verify.php?$address");
+    header("Location: verify.php?redirect=$address");
     exit;
 }
 ?>
