@@ -570,6 +570,42 @@
               </div>
             </div>
           </div>
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/black_nodes_2/Group_Output.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="Group Output Node in Geometry Nodes"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Group Output Node</h1>
+                <p>The <strong>Group Output</strong> node is the final output point of a node group. In Geometry Nodes, it defines what data (geometry, values, attributes) gets passed back to the modifier or calling context.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used at the end of a node group to send results—like modified geometry or custom attributes—out of the group for use in the main node tree or modifier stack.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Custom Node Groups:</strong> When creating reusable node groups (like scattering or mesh deformation tools), the final geometry or value flows through this node to make it usable elsewhere.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_nodes/black_nodes_2/Viewer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Viewer Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Viewer Node</h1>
+                <p>The <strong>Viewer Node</strong> is used for debugging and previewing geometry or data at any point in your node setup using the Spreadsheet and 3D viewport.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used during development to inspect geometry, attributes, or values at specific stages of the node network.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Attribute Debugging:</strong> Visualize the positions or instances mid-setup without affecting the final output.</p>
+              </div>
+            </div>
+          </div>
+
           <hr class="w-50 mx-auto"/>
           <div class="container p-5">
             <div class="row">
