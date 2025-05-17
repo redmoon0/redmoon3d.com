@@ -1,5 +1,5 @@
 <?php
-include 'Log_in_system/db.php';
+include '../../Log_in_system/db.php';
 
 // Use the blog filename (without extension) as the blog ID
 $blogId = pathinfo($_SERVER['PHP_SELF'], PATHINFO_FILENAME);

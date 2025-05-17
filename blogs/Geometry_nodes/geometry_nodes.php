@@ -23,20 +23,20 @@
     <meta name="description" content="In this Blog I have explained what are geometry nodes, where to find geometry nodes in blender, is it necessary to learn geometry nodes etc. I have also given geometry nodes list.">
     <meta name="author" content="REDMOON">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.redmoon3d.com/geometry_nodes.php" />
+    <link rel="canonical" href="https://www.redmoon3d.com/blogs/Geometry_nodes/geometry_nodes.php" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:title" content="Geometry Nodes in Blender">
     <meta property="og:description" content="Learn the power of Blender's Geometry Nodes.">
-    <meta property="og:image" content="https://docs.blender.org/manual/en/latest/_images/modeling_geometry-nodes_introduction_properties.png">
-    <meta property="og:url" content="https://www.redmoon3d.com/geometry_nodes.php">
+    <meta property="og:image" content="https://www.redmoon3d.com/blogs/Geometry_nodes/images/geometry_nodes.webp">
+    <meta property="og:url" content="https://www.redmoon3d.com/blogs/Geometry_nodes/geometry_nodes.php">
     <meta property="og:type" content="article">
 
     <!-- Twitter Meta -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Geometry Nodes in Blender">
     <meta name="twitter:description" content="Learn the power of Blender's Geometry Nodes.">
-    <meta name="twitter:image" content="https://docs.blender.org/manual/en/latest/_images/modeling_geometry-nodes_introduction_properties.png">
+    <meta name="twitter:image" content="https://www.redmoon3d.com/blogs/Geometry_nodes/images/geometry_nodes.webp">
 
     <!-- Bootstrap CSS v5.2.1 -->
     <link
@@ -47,7 +47,7 @@
     />
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=planet" />
   <style>
@@ -205,7 +205,7 @@
           <div class="container bg-dark-2 p-5 rounded-5">
             <div class="row">                
                 <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex  align-items-center">
-                  <img src="images/Geometry_nodes/Attribute_Statistic.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Attribute Statistic Node"/>
+                  <img src="images/Attribute/Attribute_Statistic.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Attribute Statistic Node"/>
                 </div>
                 <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                   <h1 class="mb-3 fw-bold">Attribute Statistic Node</h1>
@@ -222,7 +222,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Domain_Size.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Domain Size Node"/>
+                <img src="images/Attribute/Domain_Size.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Domain Size Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Domain Size Node</h1>
@@ -238,7 +238,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Blur_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Blur Attribute Node"/>
+                <img src="images/Attribute/Blur_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Blur Attribute Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Blur Attribute Node</h1>
@@ -254,7 +254,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Capture_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Capture Attribute Node"/>
+                <img src="images/Attribute/Capture_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Capture Attribute Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Capture Attribute Node</h1>
@@ -270,7 +270,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Remove_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Remove Named Attribute Node"/>
+                <img src="images/Attribute/Remove_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Remove Named Attribute Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Remove Named Attribute Node</h1>
@@ -286,7 +286,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/Store_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Store Named Attribute Node"/>
+                <img src="images/Attribute/Store_Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Store Named Attribute Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Store Named Attribute Node</h1>
@@ -301,7 +301,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Boolean.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Boolean Node"/>
+                <img src="images/Input_Constant/Boolean.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Boolean Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Boolean Node</h1>
@@ -318,7 +318,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Color.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Color Node"/>
+                <img src="images/Input_Constant/Color.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Color Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Color Node</h1>
@@ -335,7 +335,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Image.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Node"/>
+                <img src="images/Input_Constant/Image.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Image Node</h1>
@@ -352,7 +352,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Integer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Integer Node"/>
+                <img src="images/Input_Constant/Integer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Integer Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Integer Node</h1>
@@ -369,7 +369,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Material.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Material Node"/>
+                <img src="images/Input_Constant/Material.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Material Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Material Node</h1>
@@ -386,7 +386,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Rotation.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Rotation Node"/>
+                <img src="images/Input_Constant/Rotation.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Rotation Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Rotation Node</h1>
@@ -403,7 +403,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/String.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is String Node"/>
+                <img src="images/Input_Constant/String.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is String Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">String Node</h1>
@@ -420,7 +420,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes/Vector.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Vector Node"/>
+                <img src="images/Input_Constant/Vector.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Vector Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Vector Node</h1>
@@ -437,7 +437,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/black_nodes/Group_Input.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Group Input Node"/>
+                <img src="images/Input_Group/Group_Input.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Group Input Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Group Input Node</h1>
@@ -454,7 +454,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Object_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Object Info Node"/>
+                <img src="images/Input_Scene/Object_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Object Info Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Object Info Node</h1>
@@ -471,7 +471,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Scence_Time.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Scene Time Node"/>
+                <img src="images/Input_Scene/Scence_Time.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Scene Time Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Scene Time Node</h1>
@@ -488,7 +488,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Self_Object.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Self Object Node"/>
+                <img src="images/Input_Scene/Self_Object.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Self Object Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Self Object Node</h1>
@@ -505,7 +505,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Active_Camera.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Active Camera Node"/>
+                <img src="images/Input_Scene/Active_Camera.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Active Camera Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Active Camera Node</h1>
@@ -522,7 +522,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Collection_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Collection Info Node"/>
+                <img src="images/Input_Scene/Collection_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Collection Info Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Collection Info Node</h1>
@@ -539,7 +539,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Image_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Info Node"/>
+                <img src="images/Input_Scene/Image_Info.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Image Info Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Image Info Node</h1>
@@ -556,7 +556,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/pink_nodes_2/Is_Viewport.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Is Viewport Node"/>
+                <img src="images/Input_Scene/Is_Viewport.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Is Viewport Node"/>
               </div>
               <div class="col-12 col-lg-6 p-4 rounded-4 shadow-sm text-white">
                 <h1 class="mb-3 fw-bold">Is Viewport Node</h1>
@@ -573,7 +573,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/black_nodes_2/Group_Output.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="Group Output Node in Geometry Nodes"/>
+                <img src="images/Output/Group_Output.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="Group Output Node in Geometry Nodes"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Group Output Node</h1>
@@ -591,7 +591,7 @@
           <div class="container bg-dark-2 p-5 rounded-5 my-2">
             <div class="row">
               <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
-                <img src="images/Geometry_nodes/black_nodes_2/Viewer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Viewer Node"/>
+                <img src="images/Output/Viewer.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Viewer Node"/>
               </div>
               <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
                 <h1 class="mb-3 fw-bold">Viewer Node</h1>
@@ -613,7 +613,7 @@
                 <h1>Comments</h1>
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <?php include 'comments/comments.php'; ?>
+                <?php include '../../comments/comments.php'; ?>
               </div>
             </div>
           </div>
