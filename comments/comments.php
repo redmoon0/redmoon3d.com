@@ -94,6 +94,7 @@ foreach ($allComments as $row) {
   <!-- Comment Form -->
   <?php if (isset($_SESSION['user_id'])): ?>
     <?php if ($editingId && isset($editingComment)): ?>
+      
       <!-- Edit Comment Form -->
        <div id="commentbox"></div>
       <form method="POST" class="mb-4">

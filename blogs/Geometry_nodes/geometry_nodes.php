@@ -14,7 +14,7 @@
       gtag('config', 'G-D0QKYRT3F8');
     </script>
      <title>Geometry Nodes in Blender</title>
-     <link rel="icon" href="icon.png" type="image/x-icon">
+     <link rel="icon" href="../../icon.png" type="image/x-icon">
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -119,17 +119,17 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="d-lg-none d-flex gap-2 me-auto px-2" id="collapseLinks">
-            <a class="nav-link text-white p-0" href="index.php">Home</a>
-            <a class="nav-link text-white p-0" href="addons.php">Addons</a>
-            <a class="nav-link text-white p-0" href="materials.php">Materials</a>
+            <a class="nav-link text-white p-0" href="../../index.php">Home</a>
+            <a class="nav-link text-white p-0" href="../../models.php">Models</a>
+            <a class="nav-link text-white p-0" href="../../materials.php">Materials</a>
           </div>
           <div class="collapse navbar-collapse" id="mainNavbar">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-lg-5 px-md-5 px-sm-2">
               <!-- <li class="nav-item"><a class="nav-link" href="#">New</a></li>                             -->
-              <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="addons.php">Addons</a></li>
-              <li class="nav-item"><a class="nav-link" href="materials.php">Materials</a></li>
-              <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorials</a></li>            
+              <li class="nav-item"><a class="nav-link" href="../../index.php">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../models.php">Models</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../materials.php">Materials</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../tutorial.html">Tutorials</a></li>            
             </ul>
           </div>
         </div>
@@ -606,6 +606,204 @@
             </div>
           </div>
 
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/ID.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is ID Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">ID Node</h1>
+                <p>The <strong>ID Node</strong> provides a unique identifier for each element (like instances), which stays consistent even after changes in topology.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Commonly used in randomization or selection when you want stable variation across elements like instances.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Stable Random Values:</strong> Combine the ID with a Random Value node to ensure each element keeps its randomized result across updates.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/Index.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Index Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Index Node</h1>
+                <p>The <strong>Index Node</strong> outputs the index number of each element in a geometry component (like points or faces).</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used to create gradients, filters, or custom selections across elements based on their order.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Index-Based Animation:</strong> Animate elements one after another by using their index as a time offset.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/Named_Attribute.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Named Attribute Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Named Attribute Node</h1>
+                <p>The <strong>Named Attribute Node</strong> allows you to access a custom attribute by name from the geometry data.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Useful when importing or referencing named data like UV maps, vertex colors, or external attributes.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>UV-Based Effects:</strong> Access a UV map by name to apply distortion or texture-based geometry effects.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/Normal.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Normal Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Normal Node</h1>
+                <p>The <strong>Normal Node</strong> provides the surface normal direction at each point, often used for shading or directional effects.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used in aligning objects, directional distortion, or creating effects based on surface angle.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Face-Directed Instances:</strong> Align instances to the normal of each face or point for consistent orientation.</p>
+              </div>
+            </div>
+          </div>
+                    
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/Position.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Position Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Position Node</h1>
+                <p>The <strong>Position Node</strong> gives you the 3D coordinates of each element in object or world space.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used for spatial effects, distance calculations, and procedural placement logic.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Position-Based Gradients:</strong> Color or scale elements based on their position in space.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Read/Radius.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Radius Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Radius Node</h1>
+                <p>The <strong>Radius Node</strong> outputs the radius of each curve in a curve-based geometry setup.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used in procedural modeling and effects where curve thickness matters, like cables or hair strands.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Dynamic Thickness Control:</strong> Modify the radius along the length of a curve for tapering or stylized effects.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Sample/Geometry_Proximity.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Geometry Proximity Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Geometry Proximity Node</h1>
+                <p>The <strong>Geometry Proximity Node</strong> calculates the distance and/or position from points in one geometry to the closest surface, edge, or point in another.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used to create effects based on spatial relationship, like mesh attraction or proximity-based materials.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Proximity Deformation:</strong> Move or color points based on how close they are to another object.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Sample/Index_of_Nearest.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Index of Nearest Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Index of Nearest Node</h1>
+                <p>The <strong>Index of Nearest Node</strong> finds the index of the closest element (point, edge, face) from a source geometry to a target geometry.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used when you need to reference or sample data from a nearby element in another geometry.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Attribute Matching:</strong> Find and copy attributes from the closest point of another geometry.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Sample/Raycast.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Raycast Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Raycast Node</h1>
+                <p>The <strong>Raycast Node</strong> casts rays from a point in a specified direction and returns data from the first hit on a target geometry.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used to sample data across surfaces, project attributes, or detect intersections for advanced effects.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Texture Projection:</strong> Project UVs or colors from one mesh onto another using ray directions.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Sample/Sample_Index.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Sample Index Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Sample Index Node</h1>
+                <p>The <strong>Sample Index Node</strong> retrieves an attribute from another geometry based on a given index value.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Used when you've matched indices across geometries and want to fetch specific data from one onto another.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Indexed Color Transfer:</strong> Transfer color from one mesh to another by referencing point indices.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Sample/Sample_Nearest.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Sample Nearest Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Sample Nearest Node</h1>
+                <p>The <strong>Sample Nearest Node</strong> gets attribute data from the nearest element in another geometry without needing an index match.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Ideal for smooth data transfers or when you need values from the closest point, like color blending or position matching.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Smooth Color Blending:</strong> Sample colors from the closest mesh surface for natural transitions.</p>
+              </div>
+            </div>
+          </div>
+          
           <hr class="w-50 mx-auto"/>
           <div class="container p-5">
             <div class="row">

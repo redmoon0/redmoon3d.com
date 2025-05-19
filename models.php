@@ -10,7 +10,7 @@
     
       gtag('config', 'G-D0QKYRT3F8');
     </script>
-    <title>Addons</title>
+    <title>Models</title>
     <link rel="icon" href="icon.png" type="image/x-icon" />
 
     <!-- Required meta tags -->
@@ -128,17 +128,43 @@
       </nav>
     </header>
     <main>
-      <div class="container-fluid px-lg-5 py-5">
-        <div class="row g-4 justify-content-center mb-4">
-          <div class="col-12 text-center">
-            <h1 class="display-1 fw-bold text-light">On The Way! Explore More Things until then</h1>
-            <div class="mt-3">
-              <a class="btn btn-primary fs-1 px-5" href="tutorial.html" role="button">Explore</a>
+ <div class="container-fluid px-lg-5 py-5">
+    <!-- Top Row -->
+    <div class="row g-4 justify-content-center mb-4">
+      <!-- Card 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="card border-0">
+          <div id="carPaintCarousel" class="carousel slide" >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="3d_models/cars/tesla_model_x/images/tesla_car_modeling.jpg" class="d-block w-100" alt="3d model of Tesla model X">
+              </div>
+              <!-- <div class="carousel-item">
+                <img src="images/car_paint_2.webp" class="d-block w-100" alt="Procedural Car Paint">
+              </div>
+              <div class="carousel-item">
+                <img src="images/car_paint_3.webp" class="d-block w-100" alt="Procedural Car Paint">
+              </div> -->
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carPaintCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carPaintCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
+          </div>
+          <div class="card-body">
+            <p class="card-text mb-1 fs-3">Tesla Model X</p>
+            <p class="card-text text-secondary">
+                This is a highly detailed 3D model of a Tesla vehicle, created using Blender. You can download the model by clicking the button at the bottom of this page. The entire modeling process has been documented in a step-by-step tutorial, now available on YouTube.
+            </p>
+            <h5 class="card-title fw-bold fs-4">$9</h5>
+            <a href="3d_models/cars/tesla_model_x/tesla_car_model.php" class="btn btn-warning mt-2 rounded-5 px-5">Get It</a>
+            <a href="blogs/3d_Modeling_Car/3d_modeling_car.php" class="btn btn-primary mt-2 rounded-5 px-5">Tutorial</a>
           </div>
         </div>
-      </div>
-      
+      </div>      
+    </div>
     </main>
     <footer>
       <!-- place footer here -->
