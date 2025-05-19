@@ -300,10 +300,12 @@
           <div class="container p-5">
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <h1>Comments</h1>
+                <!-- <h1>Comments</h1> -->
               </div>
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <?php include 'comments/comments.php'; ?>
+                <?php 
+                // include 'comments/comments.php';
+                 ?>
               </div>
             </div>
           </div>       
