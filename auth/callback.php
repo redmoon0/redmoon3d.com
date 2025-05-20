@@ -4,7 +4,7 @@ require_once 'vendor/autoload.php'; // Load Google client library (via Composer)
 $client = new Google_Client();
 $client->setClientId('YOUR_CLIENT_ID');
 $client->setClientSecret('YOUR_CLIENT_SECRET');
-$client->setRedirectUri('https://yourdomain.com/auth/callback');
+$client->setRedirectUri('https://redmoon3d.com/auth/callback.php');
 $client->addScope("email");
 $client->addScope("profile");
 
@@ -25,8 +25,8 @@ if (isset($_GET['code'])) {
     $_SESSION['name'] = $userInfo->name;
 
     // Redirect to dashboard or homepage
-    header('Location: ../index.php');
-    exit;
+    echo "good";
+    // exit;
 } else {
     echo "No code received from Google.";
 }

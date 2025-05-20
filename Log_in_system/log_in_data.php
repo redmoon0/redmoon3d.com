@@ -153,23 +153,27 @@
     ></script>
     <script>
       function handleCredentialResponse(response) {
-        // Send ID token to your server for verification
-        fetch('/verify-token.php', {
+        console.log("Google ID Token:", response.credential); // Debug line
+
+        fetch('verify-token.php', { // 👈 Make sure this path is correct
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ token: response.credential })
         })
         .then(res => res.json())
         .then(data => {
+          console.log("Server response:", data); // Debug line
+
           if (data.success) {
-            console.log('User signed in:', data.email);
-            // You can redirect or show user info here
+            alert('Welcome ' + data.name);
+            // window.location.href = "/dashboard.php"; // Optional redirect
           } else {
-            console.error('Login failed');
+            alert('Login failed');
           }
         });
       }
     </script>
+
 
      <script>
       const searchInput = document.getElementById('searchInput');
