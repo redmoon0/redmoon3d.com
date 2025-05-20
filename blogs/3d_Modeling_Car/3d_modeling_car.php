@@ -98,9 +98,9 @@
                 <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="max-width: 150px !important;" href="../../Log_in_system/dashboard.php">Dashboard</a>';
                 <a href="Log_in_system/dashboard.php" ><i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i></a>';
               <?php elseif(!isset($_SESSION['user_id'])): ?>                
-                <a class="btn btn-red-outline py-2 d-none d-lg-block me-2" style="width: 130px !important;" href="../Log_in_system/sign_up_data.php">Sign Up</a>
-                <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="width: 120px !important;" href="../Log_in_system/log_in_data.php">Log In</a>
-                <a href="Log_in_system/sign_up_data.php" ><i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i></a>
+                <a class="btn btn-red-outline py-2 d-none d-lg-block me-2" style="width: 130px !important;" href="../../Log_in_system/sign_up_data.php">Sign Up</a>
+                <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="width: 120px !important;" href="../../Log_in_system/log_in_data.php">Log In</a>
+                <a href="../../Log_in_system/sign_up_data.php" ><i class="bi bi-person-circle fs-3 text-light d-block d-lg-none me-3"></i></a>
               <?php endif; ?>
             </div>
         </div>
@@ -142,14 +142,14 @@
         <div class="row mt-4">
           <div class="col-lg-6 col-md-6 col-sm-12 bg-dark-2 p-5">
             <div class="ratio ratio-16x9">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/eodl3VXD9Sw?si=TMnAjT9CcGXbXpGT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/50V7_C-wgYI?si=og3cOfwsc7MeA-Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-sm-12 bg-dark-2 d-flex flex-column justify-content-center align-items-center text-center p-4">
               <h2 class="text-white mb-3">Tesla Blueprints</h2>
 
               <!-- Thumbnail version of the image -->
-              <img class="img-fluid mb-3" style="max-width: 50%; height: auto;" src="images/tesla_blueprints.webp" alt="Tesla Blueprints">
+              <img class="img-fluid mb-3" style="max-width: 70%; height: auto;" src="images/tesla_blueprints.webp" alt="Tesla Blueprints">
 
               <!-- Download button linking to full-resolution image -->
               <?php if(isset($_SESSION['user_id'])):?>
