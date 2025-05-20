@@ -95,7 +95,7 @@
                   <div class="card shadow-lg rounded-4">
                     <div class="card-body p-4">
                         <h2 class="text-center mb-4">Login</h2>   
-
+<!-- 
                         <div id="g_id_onload"
                             data-client_id="1060397626423-575f1aupcc7d0unpafkepp2htgebb03n.apps.googleusercontent.com"
                             data-callback="handleCredentialResponse">
@@ -108,7 +108,7 @@
                             data-text="sign_in_with"
                             data-size="large"
                             data-logo_alignment="left">
-                        </div>                
+                        </div>                 -->
 
                         <?php if (isset($_GET['error'])): ?>
                             <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -151,30 +151,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function handleCredentialResponse(response) {
-        console.log("Google ID Token:", response.credential); // Debug line
-
-        fetch('verify-token.php', { // 👈 Make sure this path is correct
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ token: response.credential })
-        })
-        .then(res => res.json())
-        .then(data => {
-          console.log("Server response:", data); // Debug line
-
-          if (data.success) {
-            alert('Welcome ' + data.name);
-            window.location.href = "../index.php";
-          } else {
-            alert('Login failed');
-          }
-        });
-      }
-    </script>
-
-
      <script>
       const searchInput = document.getElementById('searchInput');
       if (searchInput) {
