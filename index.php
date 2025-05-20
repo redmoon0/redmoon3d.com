@@ -1,7 +1,7 @@
 <?php
   session_start();
 
-    echo $_SESSION['email'];
+    echo "<h1 style='font-size: 100px'>" . $_SESSION['email'] . "</h1>";
     echo $_SESSION['name'];
 ?>
 <!doctype html>
