@@ -166,7 +166,7 @@
 
           if (data.success) {
             alert('Welcome ' + data.name);
-            // window.location.href = "/dashboard.php"; // Optional redirect
+            window.location.href = "../index.php";
           } else {
             alert('Login failed');
           }
