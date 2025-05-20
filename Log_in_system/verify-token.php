@@ -1,32 +1,33 @@
 <?php
-// Get the token sent from JS
-include "db.php"
+require_once 'dp.php';
+
+// Get token from JS
 $input = json_decode(file_get_contents("php://input"), true);
 $id_token = $input['token'];
 
-// Send the token to Google to verify it
+// Verify token with Google
 $response = file_get_contents("https://oauth2.googleapis.com/tokeninfo?id_token=" . $id_token);
-$user = json_decode($response, true);
+$userInfo = json_decode($response, true);
 
-if (isset($user['email'])) {
-    $email = $user['email'];
-    $name = $user['name'];
-    
-    if ($conn->connect_error) {
-        die(json_encode(['success' => false, 'error' => 'DB connection failed']));
+if (isset($userInfo['email'])) {
+    $email = $userInfo['email'];
+    $username = $userInfo['name'];
+
+    // Check if user exists
+    $stmt = $pdo->prepare("SELECT id FROM users WHERE email = ?");
+    $stmt->execute([$email]);
+
+    if ($stmt->rowCount() === 0) {
+        // Insert new Google user
+        $insert = $pdo->prepare("INSERT INTO users (username, password_hash, email) VALUES (?, '', ?)");
+        $insert->execute([$username, $email]);
     }
-
-    // 4. Insert or ignore if already exists
-    $stmt = $conn->prepare("INSERT IGNORE INTO users (name, email) VALUES (?, ?)");
-    $stmt->bind_param("ss", $name, $email);
-    $stmt->execute();
 
     echo json_encode([
         'success' => true,
-        'email' => $user['email'],
-        'name' => $user['name']
+        'email' => $email,
+        'name' => $username
     ]);
 } else {
     echo json_encode(['success' => false]);
 }
-?>
