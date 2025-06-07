@@ -803,7 +803,45 @@
               </div>
             </div>
           </div>
-          
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Write/Set_ID.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Set ID Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Set ID Node</h1>
+                <p>The <strong>Set ID Node</strong> assigns a custom ID to geometry elements, typically used for tracking and consistent operations like randomization.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Essential for operations that need a stable identifier per element, like using random values that stay the same between frames.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Randomize Colors:</strong> Assign unique IDs to instances and use them as seeds for color or transformation randomness.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="container bg-dark-2 p-5 rounded-5 my-2">
+            <div class="row">
+              <div class="col-lg-5 col-md-5 col-sm-12 p-0 justify-content-center d-flex align-items-center">
+                <img src="images/Geometry_Write/Set_Position.webp" width="100%" height="auto" class="img-fluid rounded-5" alt="What is Set Position Node"/>
+              </div>
+              <div class="col-lg-7 col-md-7 col-sm-12 p-4 rounded-4 shadow-sm">
+                <h1 class="mb-3 fw-bold">Set Position Node</h1>
+                <p>The <strong>Set Position Node</strong> is used to directly change the position of geometry elements like points or vertices.</p>
+
+                <h3 class="fw-bold">Where is it Used?</h3>
+                <p>Great for procedural modeling when you need to move parts of a mesh based on attributes or custom logic.</p>
+
+                <h3 class="fw-bold">Example Use</h3>
+                <p><strong>Push Vertices Upwards:</strong> Move points upward based on a noise texture to create terrain or deformation effects.</p>
+              </div>
+            </div>
+          </div>
+
+
+
           <hr class="w-50 mx-auto"/>
           <div class="container p-5">
             <div class="row">

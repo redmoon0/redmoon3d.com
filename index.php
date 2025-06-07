@@ -63,8 +63,8 @@
 
             <div class="d-flex align-items-center">
               <?php
-                  echo "<h1 style='font-size: 100px'>" . $_SESSION['email'] . "</h1>";
-                  echo $_SESSION['name'];
+                  // echo "<h1 style='font-size: 100px'>" . $_SESSION['email'] . "</h1>";
+                  // echo $_SESSION['name'];
               ?>
               <?php if(isset($_SESSION['user_id'])):?>
                 <a class="btn btn-red-outline py-2 d-none d-lg-block me-5" style="max-width: 150px !important;" href="Log_in_system/dashboard.php">Dashboard</a>
